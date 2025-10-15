@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Chart.js from CDN for optional chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fraud Detection Simulator</h1>
+        <div class="controls">
+            <label for="userSelect">Select User:</label>
+            <select id="userSelect"></select>
+            <button id="simulateBtn">Simulate Transaction</button>
+        </div>
+        <div class="stats">
+            <canvas id="summaryChart" width="400" height="200"></canvas>
+        </div>
+        <table id="transactionsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Merchant</th>
+                    <th>Amount ($)</th>
+                    <th>Timestamp</th>
+                    <th>Risk Score</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

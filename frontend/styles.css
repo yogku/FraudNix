@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #333333;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.controls select,
+.controls button {
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+#simulateBtn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+#simulateBtn:hover {
+    background-color: #0056b3;
+}
+
+#transactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#transactionsTable th,
+#transactionsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#transactionsTable th {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+#transactionsTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#transactionsTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+/* Result colouring */
+.approved {
+    color: #28a745;
+    font-weight: bold;
+}
+.flagged {
+    color: #e0a800;
+    font-weight: bold;
+}
+.fraud {
+    color: #dc3545;
+    font-weight: bold;
+}
